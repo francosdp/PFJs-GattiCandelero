@@ -1,9 +1,10 @@
-let foundRange
+
 const rangeShock = document.getElementById('range-shock')
 const rangePen = document.getElementById('range-penetration')
 const rangeDmg = document.getElementById('range-damage')
 let distances = []
-
+let foundRange
+const rangeSelector = document.getElementById('range-selector')
 document.addEventListener('DOMContentLoaded', () => {
     fetch("../data/distances.json")
         .then(response => response.json())
@@ -11,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
             function buscarRango(rangeId) {
                 foundRange = distances.flat().find(distance => distance.distanceObjId === rangeId);
             }
-            ranges = data;
+            distances= data;
             console.log(data)
-            ranges.forEach(range => {
+            distances.forEach(range => {
                 const button = document.createElement('button')
                 button.id = `${range.distanceObjId}`;
                 button.innerText = `${range.name}`
@@ -27,10 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         rangeShock.innerText = foundRange.reducedShock
                         rangePen.innerText = foundRange.reducedPenetration
                         rangeDmg.innerText = foundRange.reducedDamage
-                        rangeSelector.appendChild(button);
                     })
-
+                    rangeSelector.appendChild(button);
             })
         })
 })
-const rangeSelector = document.getElementById('range-selector')

@@ -98,15 +98,15 @@ const getSearchs = () => {
 btnCalcular.addEventListener('click', function (event) {
     event.preventDefault()
     strongWpn.innerText = foundWeapon.name
-    strongVest.innerText = foundArmor.tier
-    strongRange.innerText = foundRange.meters
+    strongVest.innerText = foundArmor.name
+    strongRange.innerText = foundRange.name
     shockDone = damageCalculator(foundWeapon.hitShock, foundRange.reducedShock, foundArmor.shockProtection)
     penetrationDone = damageCalculator(foundWeapon.hitPenetration, foundRange.reducedPenetration, foundArmor.penetrationProtection)
     damageDone = damageCalculator(foundWeapon.hitDamage, foundRange.reducedDamage, foundArmor.penetrationProtection)
     strongShock.innerText = shockDone.toFixed(2)
     strongPen.innerText = penetrationDone.toFixed(2)
     strongDmg.innerText = damageDone.toFixed(2)
-    let search = newSearch(foundWeapon.name, foundArmor.tier, foundRange.meters, shockDone.toFixed(2), penetrationDone.toFixed(2), damageDone.toFixed(2))
+    let search = newSearch(foundWeapon.name, foundArmor.name, foundRange.name, shockDone.toFixed(2), penetrationDone.toFixed(2), damageDone.toFixed(2))
     console.log(search)
     addSearch(search)
     console.log(searchHistory)
