@@ -1,6 +1,6 @@
 [
   {
-    "type": "pistolas",
+    "type": "pistols",
     "items": [
       {
         "objId": 10,
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "type": "escopetas",
+    "type": "shotguns",
     "items": [
       {
         "objId": 20,
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "type": "subfusiles",
+    "type": "submachines",
     "items": [
       {
         "objId": 30,
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "type": "fusiles",
+    "type": "rifles",
     "items": [
       {
         "objId": 40,
@@ -146,7 +146,7 @@
     ]
   },
   {
-    "type": "rifles",
+    "type": "snipers",
     "items": [
       {
         "objId": 50,
