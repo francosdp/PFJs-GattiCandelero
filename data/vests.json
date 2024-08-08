@@ -1,0 +1,42 @@
+[
+    {
+        "type": "vest",
+        "name": "tier1Vest",
+        "vestId": 105,
+        "shockProtection": 2,
+        "penetrationProtection": 2,
+        "damageProtection": 1.5
+    },
+    {
+        "type": "vest",
+        "name": "tier2Vest",
+        "vestId": 106,
+        "shockProtection": 2.3,
+        "penetrationProtection": 2.5,
+        "damageProtection": 1.8
+    },
+    {
+        "type": "vest",
+        "name": "tier3Vest",
+        "vestId": 107,
+        "shockProtection": 2.6,
+        "penetrationProtection": 3,
+        "damageProtection": 2.5
+    },
+    {
+        "type": "vest",
+        "name": "tier4Vest",
+        "vestId": 108,
+        "shockProtection": 2.8,
+        "penetrationProtection": 5,
+        "damageProtection": 3.5
+    },
+    {
+        "type": "vest",
+        "name": "tier5Vest",
+        "vestId": 109,
+        "shockProtection": 3,
+        "penetrationProtection": 6.5,
+        "damageProtection": 5
+    }
+]

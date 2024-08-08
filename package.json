@@ -1,0 +1,16 @@
+{
+  "name": "proyectofinal-gatticandelero",
+  "version": "1.0.0",
+  "description": "Proyecto Final CoderHouse",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "francogatti.sdp@outlook.com",
+  "license": "ISC",
+  "dependencies": {
+    "luxon": "^3.5.0",
+    "sweetalert2": "^11.12.4",
+    "toastify-js": "^1.12.0"
+  }
+}

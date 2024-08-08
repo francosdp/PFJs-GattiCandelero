@@ -1,0 +1,58 @@
+[
+  {
+    "type": "distance",
+    "name": "distance1",
+    "distanceObjId": 155,
+    "reducedShock": 1,
+    "reducedPenetration": 1,
+    "reducedDamage": 0.1
+  },
+  {
+    "type": "distance",
+    "name": "distance2",
+    "distanceObjId": 156,
+    "reducedShock": 1.5,
+    "reducedPenetration": 1.3,
+    "reducedDamage": 1.4
+  },
+  {
+    "type": "distance",
+    "name": "distance3",
+    "distanceObjId": 157,
+    "reducedShock": 1.8,
+    "reducedPenetration": 1.5,
+    "reducedDamage": 1.5
+  },
+  {
+    "type": "distance",
+    "name": "distance4",
+    "distanceObjId": 158,
+    "reducedShock": 2,
+    "reducedPenetration": 1.7,
+    "reducedDamage": 1.7
+  },
+  {
+    "type": "distance",
+    "name": "distance5",
+    "distanceObjId": 159,
+    "reducedShock": 2.4,
+    "reducedPenetration": 2,
+    "reducedDamage": 1.9
+  },
+  {
+    "type": "distance",
+    "name": "distance6",
+    "distanceObjId": 160,
+    "reducedShock": 2.6,
+    "reducedPenetration": 2.1,
+    "reducedDamage": 2
+  },
+  {
+    "type": "distance",
+    "name": "distance7",
+    "distanceObjId": 161,
+    "reducedShock": 3,
+    "reducedPenetration": 2.5,
+    "reducedDamage": 2.3
+  }
+]

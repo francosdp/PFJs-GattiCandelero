@@ -1,0 +1,189 @@
+[
+  {
+    "type": "pistolas",
+    "items": [
+      {
+        "objId": 10,
+        "name": "MK II",
+        "ammo": ".22 LR",
+        "firemode": "Semi-Automatica",
+        "hitShock": 2,
+        "hitPenetration": 8,
+        "hitDamage": 12
+      },
+      {
+        "objId": 11,
+        "name": "Mlock91",
+        "ammo": "9x19mm",
+        "firemode": "Semi-Automatica",
+        "hitShock": 10,
+        "hitPenetration": 15,
+        "hitDamage": 18
+      },
+      {
+        "objId": 12,
+        "name": "Kolt 1911",
+        "ammo": ".45ACP",
+        "firemode": "Semi-Automatica",
+        "hitShock": 15,
+        "hitPenetration": 13,
+        "hitDamage": 24
+      },
+      {
+        "objId": 13,
+        "name": "Deagle",
+        "ammo": ".357",
+        "firemode": "Semi-Automatica",
+        "hitShock": 25,
+        "hitPenetration": 18,
+        "hitDamage": 29
+      }
+    ]
+  },
+  {
+    "type": "escopetas",
+    "items": [
+      {
+        "objId": 20,
+        "name": "BK-133",
+        "ammo": "12ga",
+        "firemode": "Pump",
+        "hitShock": 70,
+        "hitPenetration": 25,
+        "hitDamage": 50
+      },
+      {
+        "objId": 21,
+        "name": "BK-43",
+        "ammo": "12ga",
+        "firemode": "Cañon Doble",
+        "hitShock": 70,
+        "hitPenetration": 25,
+        "hitDamage": 50
+      },
+      {
+        "objId": 22,
+        "name": "Vaiga",
+        "ammo": "12ga",
+        "firemode": "Semi-Automática y Automática",
+        "hitShock": 70,
+        "hitPenetration": 25,
+        "hitDamage": 50
+      }
+    ]
+  },
+  {
+    "type": "subfusiles",
+    "items": [
+      {
+        "objId": 30,
+        "name": "SG5-K",
+        "ammo": "9x19mm",
+        "firemode": "Semi-Automática y Automática",
+        "hitShock": 17,
+        "hitPenetration": 20,
+        "hitDamage": 22
+      },
+      {
+        "objId": 31,
+        "name": "USG -45",
+        "ammo": ".45ACP",
+        "firemode": "Semi-Automática y Automática",
+        "hitShock": 19,
+        "hitPenetration": 18,
+        "hitDamage": 29
+      }
+    ]
+  },
+  {
+    "type": "fusiles",
+    "items": [
+      {
+        "objId": 40,
+        "name": "M4-A1",
+        "ammo": "5.56x45mm",
+        "firemode": "Semi-Automática y Automática",
+        "hitShock": 41,
+        "hitPenetration": 52,
+        "hitDamage": 43
+      },
+      {
+        "objId": 41,
+        "name": "KA-74",
+        "ammo": "5.45x39mm",
+        "firemode": "Semi-Automática y Automática",
+        "hitShock": 39,
+        "hitPenetration": 48,
+        "hitDamage": 39
+      },
+      {
+        "objId": 42,
+        "name": "LAR",
+        "ammo": "308WIN",
+        "firemode": "Semi-Automática y Automática",
+        "hitShock": 60,
+        "hitPenetration": 64,
+        "hitDamage": 55
+      },
+      {
+        "objId": 43,
+        "name": "KA-M",
+        "ammo": "7.62x39mm",
+        "firemode": "Semi-Automática y Automática",
+        "hitShock": 57,
+        "hitPenetration": 59,
+        "hitDamage": 49
+      },
+      {
+        "objId": 44,
+        "name": "SVAL",
+        "ammo": "9x39mm",
+        "firemode": "Semi-Automática y Automática",
+        "hitShock": 29,
+        "hitPenetration": 70,
+        "hitDamage": 39
+      }
+    ]
+  },
+  {
+    "type": "rifles",
+    "items": [
+      {
+        "objId": 50,
+        "name": "M70 Tundra",
+        "ammo": "308WIN",
+        "firemode": "Cerrojo",
+        "hitShock": 80,
+        "hitPenetration": 80,
+        "hitDamage": 67
+      },
+      {
+        "objId": 51,
+        "name": "Mosin 91/30",
+        "ammo": "7.62x54mmR",
+        "firemode": "Cerrojo",
+        "hitShock": 84,
+        "hitPenetration": 82,
+        "hitDamage": 72
+      },
+      {
+        "objId": 52,
+        "name": "VSD",
+        "ammo": "7.62x39mm",
+        "firemode": "Semi-Automática",
+        "hitShock": 70,
+        "hitPenetration": 67,
+        "hitDamage": 59
+      },
+      {
+        "objId": 53,
+        "name": "Blaze",
+        "ammo": "308WIN",
+        "firemode": "Unico y Doble Disparo",
+        "hitShock": 76,
+        "hitPenetration": 73,
+        "hitDamage": 49
+      }
+    ]
+  }
+]

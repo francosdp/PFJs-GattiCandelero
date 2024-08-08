@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Bienvenido a Dayz Damage Calculator</h1>
+            <img src="../resources/dayzlogo.jpg" alt="Logo Dayz">
+            <a href="https://steamcommunity.com/id/010101001001010011/">
+                <h5>Desarrollado por franz-</h5>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="main" id="01">
+            <div class="intro-div">
+                <div class="history-search" id="history-search">
+                </div>
+                <br>
+                <button id="clear-history">Limpiar Historial</button>
+                <br>
+                <br>
+                <form method="get">
+                    <input id="input-nick" type="text" placeholder="Introduce tu nickname">
+                    <button id="submit-nick" type="submit">Enviar</button>
+            </div>
+            </form>
+            <div id="weapon-selector">
+                <h3 id="choose-text"></h3>
+                <div class="pìstolas">
+                    <h3>Pistolas</h3>
+                    <button id="btn1">MKII</button>
+                    <button id="btn2">Mlock-91</button>
+                    <button id="btn3">Kolt1911</button>
+                    <button id="btn4">Deagle</button>
+                </div>
+                <div class="escopetas">
+                    <h3>Escopetas</h3>
+                    <button id="btn20">BK133</button>
+                    <button id="btn21">BK43</button>
+                    <button id="btn22">Vaiga</button>
+                </div>
+                <div class="subfusiles">
+                    <h3>Escopetas</h3>
+                    <button id="btn30">SGK-5</button>
+                    <button id="btn31">USG-45</button>
+                </div>
+                <div class="rifles">
+                    <h3>Rifles de Asalto</h3>
+                    <button id="btn40">M4A1</button>
+                    <button id="btn41">KA-74</button>
+                    <button id="btn42">LAR</button>
+                    <button id="btn43">KAM</button>
+                    <button id="btn44">SVAL</button>
+                </div>
+                <div class="rifles">
+                    <h3>Rifles de Caza</h3>
+                    <button id="btn50">M70-Tundra</button>
+                    <button id="btn51">Mosin</button>
+                    <button id="btn52">SVD</button>
+                    <button id="btn53">Blaze</button>
+                </div>
+            </div>
+            <div class="weapon-shown">
+                <div class="weapon-info"></div>
+                <img id="wpn-showimg" src="" alt="Proximamente imagen de tu arma">
+                <h4 id="wpn-showname"></h4>
+                <h6 id="wpn-showcal"></h6>
+                <h6 id="wpn-showfiremode"></h6>
+            </div>
+            <div class="weapon-stats">
+                <p>Shock</p>
+                <h6 id="wpn-shock"></h6>
+                <p>Penetración</p>
+                <h6 id="wpn-pen"></h6>
+                <p>Daño</p>
+                <h6 id="wpn-dmg"></h6>
+            </div>
+            </div>
+        </section>
+        <section class="vest-distance-selector">
+            <div class="vest-selector">
+                <h3>Escoje el tier del Vest</h3>
+                <button id="btn105">Tier 1</button>
+                <button id="btn106">Tier 2</button>
+                <button id="btn107">Tier 3</button>
+                <button id="btn108">Tier 4</button>
+                <button id="btn109">Tier 5</button>
+                <div class="vest-shown">
+                    <img id="vest-showimg" src="" alt="Proximamente Imagen del Vest">
+                    <p>Protección de Shock</p>
+                    <h6 id="vest-shock"></h6>
+                    <p>Protección de Penetración</p>
+                    <h6 id="vest-penetration"></h6>
+                    <p>Protección al Daño</p>
+                    <h6 id="vest-damage"></h6>
+                </div>
+            </div>
+            <div class="distance-selector">
+                <h3>Escoje una distancia de disparo</h3>
+                <button id="btn155">100 a 200 mts</button>
+                <button id="btn156">200 a 300 mts</button>
+                <button id="btn157">300 a 400 mts</button>
+                <button id="btn158">400 a 500 mts</button>
+                <button id="btn159">500 a 600 mts</button>
+                <button id="btn160">600 a 700 mts</button>
+                <button id="btn161">+700 mts</button>
+                <div class="range-shown">
+                    <p>Reducción de Shock</p>
+                    <h6 id="range-shock"></h6>
+                    <p>Reducción de Penetración</p>
+                    <h6 id="range-penetration"></h6>
+                    <p>Reducción de Daño</p>
+                    <h6 id="range-damage"></h6>
+                </div>
+            </div>
+        </section>
+        <section class="Calculator">
+            <button id="next">Siguiente</button>
+            <h4 class="welcome" id="next-nick">
+            </h4>
+            <button id="do-calcular">CALCULAR</button>
+            <p>Tu arma <strong id="strong-wpn"></strong>.</p>
+            <br>
+            <p>Tier del Chaleco <strong id="strong-vest"></strong>.</p>
+            <br>
+            <p>Distacia de disparo al objetivo <strong id="strong-range">.</strong></p>
+            <h4>Daño esperado:</h4>
+            <p>Shock <strong id="strong-shock"></strong>%.</p>
+            <p>Penetracion <strong id="strong-pen"></strong>%.</p>
+            <p>Daño <strong id="strong-dmg"></strong>%.</p>
+            <button id="new-search">Nueva Búsqueda</button>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../data/data.js"></script>
+    <script src="../data/distances.json"></script>
+    <script src="../data/vests.json"></script>
+    <script src="../data/weapons.json"></script>
+    <script src="../Js/selectorsJs/range-selector.js"></script>
+    <script src="../Js/selectorsJs/vest-selector.js"></script>
+    <script src="../Js/selectorsJs/wpn-selector.js"></script>
+    <script src="../Js/fetch.js"></script>
+    <script src="../Js/main.js"></script>
+</html>
