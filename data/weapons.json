@@ -9,7 +9,8 @@
         "firemode": "Semi-Automatica",
         "hitShock": 2,
         "hitPenetration": 8,
-        "hitDamage": 12
+        "hitDamage": 12,
+        "img":"../resources/MKIMG.jpg"
       },
       {
         "objId": 11,
@@ -18,7 +19,8 @@
         "firemode": "Semi-Automatica",
         "hitShock": 10,
         "hitPenetration": 15,
-        "hitDamage": 18
+        "hitDamage": 18,
+        "img":"../resources/MlockIMG.jpg"
       },
       {
         "objId": 12,
@@ -27,7 +29,8 @@
         "firemode": "Semi-Automatica",
         "hitShock": 15,
         "hitPenetration": 13,
-        "hitDamage": 24
+        "hitDamage": 24,
+        "img":"../resources/KoltIMG.jpg"
       },
       {
         "objId": 13,
@@ -36,7 +39,8 @@
         "firemode": "Semi-Automatica",
         "hitShock": 25,
         "hitPenetration": 18,
-        "hitDamage": 29
+        "hitDamage": 29,
+        "img":"../resources/DeagleIMG.jpg"
       }
     ]
   },
@@ -50,7 +54,8 @@
         "firemode": "Pump",
         "hitShock": 70,
         "hitPenetration": 25,
-        "hitDamage": 50
+        "hitDamage": 50,
+        "img":"../resources/BK133IMG.jpg"
       },
       {
         "objId": 21,
@@ -59,7 +64,8 @@
         "firemode": "Cañon Doble",
         "hitShock": 70,
         "hitPenetration": 25,
-        "hitDamage": 50
+        "hitDamage": 50,
+        "img":"../resources/BK43IMG.jpg"
       },
       {
         "objId": 22,
@@ -68,7 +74,8 @@
         "firemode": "Semi-Automática y Automática",
         "hitShock": 70,
         "hitPenetration": 25,
-        "hitDamage": 50
+        "hitDamage": 50,
+        "img":"../resources/VaigaIMG.jpg"
       }
     ]
   },
@@ -82,7 +89,8 @@
         "firemode": "Semi-Automática y Automática",
         "hitShock": 17,
         "hitPenetration": 20,
-        "hitDamage": 22
+        "hitDamage": 22,
+        "img":"../resources/SGIMG.jpg"
       },
       {
         "objId": 31,
@@ -91,7 +99,8 @@
         "firemode": "Semi-Automática y Automática",
         "hitShock": 19,
         "hitPenetration": 18,
-        "hitDamage": 29
+        "hitDamage": 29,
+        "img":"../resources/USGIMG.jpg"
       }
     ]
   },
@@ -105,7 +114,8 @@
         "firemode": "Semi-Automática y Automática",
         "hitShock": 41,
         "hitPenetration": 52,
-        "hitDamage": 43
+        "hitDamage": 43,
+        "img":"../resources/M4A1IMG.jpg"
       },
       {
         "objId": 41,
@@ -114,7 +124,8 @@
         "firemode": "Semi-Automática y Automática",
         "hitShock": 39,
         "hitPenetration": 48,
-        "hitDamage": 39
+        "hitDamage": 39,
+        "img":"../resources/KA74IMG.jpg"
       },
       {
         "objId": 42,
@@ -123,7 +134,8 @@
         "firemode": "Semi-Automática y Automática",
         "hitShock": 60,
         "hitPenetration": 64,
-        "hitDamage": 55
+        "hitDamage": 55,
+        "img":"../resources/LARIMG.jpg"
       },
       {
         "objId": 43,
@@ -132,7 +144,8 @@
         "firemode": "Semi-Automática y Automática",
         "hitShock": 57,
         "hitPenetration": 59,
-        "hitDamage": 49
+        "hitDamage": 49,
+        "img":"../resources/KAMIMG.jpg"
       },
       {
         "objId": 44,
@@ -141,7 +154,8 @@
         "firemode": "Semi-Automática y Automática",
         "hitShock": 29,
         "hitPenetration": 70,
-        "hitDamage": 39
+        "hitDamage": 39,
+        "img":"../resources/SVALIMG.jpg"
       }
     ]
   },
@@ -155,7 +169,8 @@
         "firemode": "Cerrojo",
         "hitShock": 80,
         "hitPenetration": 80,
-        "hitDamage": 67
+        "hitDamage": 67,
+        "img":"../resources/TUNDRAIMG.jpg"
       },
       {
         "objId": 51,
@@ -164,7 +179,8 @@
         "firemode": "Cerrojo",
         "hitShock": 84,
         "hitPenetration": 82,
-        "hitDamage": 72
+        "hitDamage": 72,
+        "img":"../resources/MOSINIMG.jpg"
       },
       {
         "objId": 52,
@@ -173,7 +189,8 @@
         "firemode": "Semi-Automática",
         "hitShock": 70,
         "hitPenetration": 67,
-        "hitDamage": 59
+        "hitDamage": 59,
+        "img":"../resources/VSDIMG.jpg"
       },
       {
         "objId": 53,
@@ -182,7 +199,8 @@
         "firemode": "Unico y Doble Disparo",
         "hitShock": 76,
         "hitPenetration": 73,
-        "hitDamage": 49
+        "hitDamage": 49,
+        "img":"../resources/BLAZEIMG.jpg"
       }
     ]
   }

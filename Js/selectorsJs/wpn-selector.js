@@ -4,6 +4,8 @@ const wpnShowFiremode = document.getElementById("wpn-showfiremode")
 const wpnShock = document.getElementById("wpn-shock")
 const wpnPen = document.getElementById("wpn-pen")
 const wpnDmg = document.getElementById("wpn-dmg")
+const wpnInfo = document.getElementById("weapon-info")
+let img 
 let foundWeapon
 let pistolas = []
 
@@ -21,6 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.innerText = `${pistola.name}`
                 button.addEventListener
                     ('click', function (event) {
+                        if (img != null){
+                            img.remove()
+                        }
                         event.preventDefault()
                         wpnId = pistola.objId
                         console.log(pistola.objId)
@@ -32,6 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         wpnDmg.innerText = foundWeapon.hitDamage
                         wpnPen.innerText = foundWeapon.hitPenetration
                         wpnShock.innerText = foundWeapon.hitShock
+                        img = document.createElement('img')
+                        img.src=pistola.img
+                        img.alt=pistola.name
+                        wpnInfo.appendChild(img)
                     })
                 pistolSelector.appendChild(button);
             })
@@ -57,6 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.addEventListener
                     ('click', function (event) {
                         event.preventDefault()
+                        if (img != null){
+                            img.remove()
+                        }
                         wpnId = shotgun.objId
                         console.log(shotgun.objId)
                         buscarArma(wpnId)
@@ -67,6 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         wpnDmg.innerText = foundWeapon.hitDamage
                         wpnPen.innerText = foundWeapon.hitPenetration
                         wpnShock.innerText = foundWeapon.hitShock
+                        img = document.createElement('img')
+                        img.src=shotgun.img
+                        img.alt=shotgun.name
+                        wpnInfo.appendChild(img)
                     })
                     shotgunSelector.appendChild(button);
             })
@@ -92,6 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.addEventListener
                     ('click', function (event) {
                         event.preventDefault()
+                        if (img != null){
+                            img.remove()
+                        }
                         wpnId = submachine.objId
                         console.log(submachine.objId)
                         buscarArma(wpnId)
@@ -102,6 +121,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         wpnDmg.innerText = foundWeapon.hitDamage
                         wpnPen.innerText = foundWeapon.hitPenetration
                         wpnShock.innerText = foundWeapon.hitShock
+                        img = document.createElement('img')
+                        img.src=submachine.img
+                        img.alt=submachine.name
+                        wpnInfo.appendChild(img)
                     })
                     submachineSelector.appendChild(button);
             })
@@ -128,6 +151,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.addEventListener
                     ('click', function (event) {
                         event.preventDefault()
+                        if (img != null){
+                            img.remove()
+                        }
                         wpnId = rifle.objId
                         console.log(rifle.objId)
                         buscarArma(wpnId)
@@ -138,6 +164,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         wpnDmg.innerText = foundWeapon.hitDamage
                         wpnPen.innerText = foundWeapon.hitPenetration
                         wpnShock.innerText = foundWeapon.hitShock
+                        img = document.createElement('img')
+                        img.src=rifle.img
+                        img.alt=rifle.name
+                        wpnInfo.appendChild(img)
                     })
                     riflesSelector.appendChild(button);
             })
@@ -162,7 +192,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.addEventListener
                     ('click', function (event) {
                         event.preventDefault()
-                        wpnId = sniper.objId
+                        if (img != null){
+                            img.remove()
+                        }                        wpnId = sniper.objId
                         console.log(sniper.objId)
                         buscarArma(wpnId)
                         console.log(foundWeapon)
@@ -172,6 +204,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         wpnDmg.innerText = foundWeapon.hitDamage
                         wpnPen.innerText = foundWeapon.hitPenetration
                         wpnShock.innerText = foundWeapon.hitShock
+                        img = document.createElement('img')
+                        img.src=sniper.img
+                        img.alt=sniper.name
+                        wpnInfo.appendChild(img)
                     })
                     snipersSelector.appendChild(button);
             })
