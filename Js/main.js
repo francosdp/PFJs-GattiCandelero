@@ -18,12 +18,6 @@ submitNick.addEventListener('click', function (e) {
 const btnNext = document.getElementById("next")
 const nextNick = document.getElementById('next-nick')
 
-btnNext.addEventListener('click', function (event) {
-    event.preventDefault()
-    nextNick.innerText = "Perfecto " + nick + " estos son sus resultados:"
-    console.log(nick)
-})
-
 const btnCalcular = document.getElementById("do-calcular")
 const strongWpn = document.getElementById("strong-wpn")
 const strongVest = document.getElementById("strong-vest")
@@ -97,6 +91,7 @@ const getSearchs = () => {
 
 btnCalcular.addEventListener('click', function (event) {
     event.preventDefault()
+    nextNick.innerText = "Perfecto " + nick + " estos son sus resultados:"
     strongWpn.innerText = foundWeapon.name
     strongVest.innerText = foundArmor.name
     strongRange.innerText = foundRange.name

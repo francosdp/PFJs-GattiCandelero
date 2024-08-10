@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const button = document.createElement('button')
                 button.id = `${pistola.objId}`;
                 button.innerText = `${pistola.name}`
+                button.className='selector'
                 button.addEventListener
                     ('click', function (event) {
                         if (img != null){

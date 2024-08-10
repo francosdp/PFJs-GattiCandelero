@@ -15,15 +15,15 @@
 <body>
     <header>
         <div class="header">
-            <h1>Bienvenido a Dayz Damage Calculator</h1>
             <img src="../resources/dayzlogo.jpg" alt="Logo Dayz">
+            <h1>Calculadora De Daño Dayz</h1>
             <a href="https://steamcommunity.com/id/010101001001010011/">
                 <h5>Desarrollado por franz-</h5>
             </a>
         </div>
     </header>
     <main>
-        <section class="main" id="01">
+        <section class="home" id="01">
             <div class="intro-div">
                 <div class="history-search" id="history-search">
                 </div>
@@ -31,92 +31,108 @@
                 <button id="clear-history">Limpiar Historial</button>
                 <br>
                 <br>
-                <form method="get">
+                <form class="nick" method="get">
                     <input id="input-nick" type="text" placeholder="Introduce tu nickname">
                     <button id="submit-nick" type="submit">Enviar</button>
+                    <h3 id="choose-text"></h3>
             </div>
             </form>
-            <div id="weapon-selector">
-                <h3 id="choose-text"></h3>
-                <div class="pìstols">
-                    <h3>Pistolas</h3>
-                    <div id="pistol-selector"></div>
+            <section class="selection">
+                <section class="selectors">
+                    <h2>Escoje tu arma</h2>
+                    <div class="weapon-selector">
+                        <div class="column1">
+                            <div class="pìstols">
+                                <h3>Pistolas</h3>
+                                <div id="pistol-selector"></div>
+                            </div>
+                            <div class="shotgun">
+                                <h3>Escopetas</h3>
+                                <div id="shotgun-selector"></div>
+                                <div class="submachines">
+                                    <h3>Sub-Ametralladoras</h3>
+                                    <div id="submachines-selector"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column2">
+
+                            <div class="rifles">
+                                <h3>Rifles</h3>
+                                <div id="rifles-selector"></div>
+                            </div>
+                            <div class="snipers">
+                                <h3>Snipers</h3>
+                                <div id="snipers-selector"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vest-distance-selector">
+                        <div class="vests">
+                            <h3>Escoje el tier del Vest</h3>
+                            <div id="vest-selector"></div>
+
+                        </div>
+                        <div class="range">
+                            <h3>Escoje la distancia del disparo</h3>
+                            <div id="range-selector"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="selected">
+                    <div class="weapon-shown">
+                        <div id="weapon-info"></div>
+                        <h4 id="wpn-showname"></h4>
+                        <h6 id="wpn-showcal"></h6>
+                        <h6 id="wpn-showfiremode"></h6>
+                        <div class="weapon-stats">
+                            <p>Shock</p>
+                            <h6 id="wpn-shock"></h6>
+                            <p>Penetración</p>
+                            <h6 id="wpn-pen"></h6>
+                            <p>Daño</p>
+                            <h6 id="wpn-dmg"></h6>
+                        </div>
+                    </div>
+                    <div class="vest-shown">
+                        <p>Protección de Shock</p>
+                        <h6 id="vest-shock"></h6>
+                        <p>Protección de Penetración</p>
+                        <h6 id="vest-penetration"></h6>
+                        <p>Protección al Daño</p>
+                        <h6 id="vest-damage"></h6>
+                    </div>
+                    <div class="range-shown">
+                        <p>Reducción de Shock</p>
+                        <h6 id="range-shock"></h6>
+                        <p>Reducción de Penetración</p>
+                        <h6 id="range-penetration"></h6>
+                        <p>Reducción de Daño</p>
+                        <h6 id="range-damage"></h6>
+                    </div>
+                </section>
+            </section>
+            <section class="calculator">
+                <h4 class="welcome" id="next-nick">
+                </h4>
+                <div class="calcular"><button class="btn-calcular" id="do-calcular">CALCULAR</button></div>
+                <div class="calcular-items">
+                    <p>Tu arma <strong id="strong-wpn"></strong>.</p>
+                    <br>
+                    <p>Tier del Chaleco <strong id="strong-vest"></strong>.</p>
+                    <br>
+                    <p>Distacia de disparo al objetivo <strong id="strong-range">.</strong></p>
                 </div>
-                <div class="shotgun">
-                    <h3>Escopetas</h3>
-                    <div id="shotgun-selector"></div>
+                <div class="daño">
+                    <h4>Daño esperado:</h4>
                 </div>
-                <div class="submachines">
-                    <h3>Sub-Ametralladoras</h3>
-                    <div id="submachines-selector"></div>
+                <div class="result">
+                    <p>Shock <strong id="strong-shock"></strong>%.</p>
+                    <p>Penetración <strong id="strong-pen"></strong>%.</p>
+                    <p>Daño <strong id="strong-dmg"></strong>%.</p>
                 </div>
-                <div class="rifles">
-                    <h3>Rifles</h3>
-                    <div id="rifles-selector"></div>
-                </div>
-                <div class="snipers">
-                    <h3>Snipers</h3>
-                    <div id="snipers-selector"></div>
-                </div>
-            </div>
-            <div class="weapon-shown">
-                <div id="weapon-info"></div>
-                <h4 id="wpn-showname"></h4>
-                <h6 id="wpn-showcal"></h6>
-                <h6 id="wpn-showfiremode"></h6>
-            </div>
-            <div class="weapon-stats">
-                <p>Shock</p>
-                <h6 id="wpn-shock"></h6>
-                <p>Penetración</p>
-                <h6 id="wpn-pen"></h6>
-                <p>Daño</p>
-                <h6 id="wpn-dmg"></h6>
-            </div>
-            </div>
-        </section>
-        <section class="vest-distance-selector">
-            <div class="vests">
-                <h3>Escoje el tier del Vest</h3>
-                <div id="vest-selector"></div>
-                <div class="vest-shown">
-                    <img id="vest-showimg" src="" alt="Proximamente Imagen del Vest">
-                    <p>Protección de Shock</p>
-                    <h6 id="vest-shock"></h6>
-                    <p>Protección de Penetración</p>
-                    <h6 id="vest-penetration"></h6>
-                    <p>Protección al Daño</p>
-                    <h6 id="vest-damage"></h6>
-                </div>
-            </div>
-            <div class="range">
-                <h3>Escoje la distancia del disparo</h3>
-                <div id="range-selector"></div>
-                <div class="range-shown">
-                    <p>Reducción de Shock</p>
-                    <h6 id="range-shock"></h6>
-                    <p>Reducción de Penetración</p>
-                    <h6 id="range-penetration"></h6>
-                    <p>Reducción de Daño</p>
-                    <h6 id="range-damage"></h6>
-                </div>
-            </div>
-        </section>
-        <section class="Calculator">
-            <button id="next">Siguiente</button>
-            <h4 class="welcome" id="next-nick">
-            </h4>
-            <button id="do-calcular">CALCULAR</button>
-            <p>Tu arma <strong id="strong-wpn"></strong>.</p>
-            <br>
-            <p>Tier del Chaleco <strong id="strong-vest"></strong>.</p>
-            <br>
-            <p>Distacia de disparo al objetivo <strong id="strong-range">.</strong></p>
-            <h4>Daño esperado:</h4>
-            <p>Shock <strong id="strong-shock"></strong>%.</p>
-            <p>Penetracion <strong id="strong-pen"></strong>%.</p>
-            <p>Daño <strong id="strong-dmg"></strong>%.</p>
-            <button id="new-search">Nueva Búsqueda</button>
+                <button class="new-search" id="new-search">Nueva Búsqueda</button>
+            </section>
         </section>
     </main>
     <footer>
