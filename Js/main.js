@@ -1,5 +1,4 @@
 
-// Panel Usuario
 const inputNick = document.getElementById("input-nick")
 const submitNick = document.getElementById("submit-nick")
 let nick
@@ -126,7 +125,3 @@ setTimeout(function() {
 }, 1000);
 })
 
-
-//Aun falta el diseño de la pagina y algunos detalles
-// Pero en principio la calculadora funciona bien
-// Registra datos, guarda en local y modifica el dom.
