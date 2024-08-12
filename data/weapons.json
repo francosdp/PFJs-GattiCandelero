@@ -10,7 +10,7 @@
         "hitShock": 2,
         "hitPenetration": 8,
         "hitDamage": 12,
-        "img":"../resources/MKIMG.jpg"
+        "img":"./resources/MKIMG.jpg"
       },
       {
         "objId": 11,
