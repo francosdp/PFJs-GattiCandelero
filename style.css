@@ -48,6 +48,7 @@
     display: flex;
     justify-content: space-evenly;
     background-color: rgba(29, 28, 28, 0.429);
+    height: 850px;
 }
 
 .selectors {
@@ -55,7 +56,7 @@
     display: flex;
     flex-direction: column;
     width: 75%;
-    height: 800px;
+    height: 850px;
     justify-content: space-evenly;
 }
 
@@ -118,6 +119,7 @@
     display: flex;
     flex-direction: column;
     width: 25%;
+    height: 850px;
     justify-content: space-evenly;
     border-style: double;
     margin-right: 25px;
@@ -128,13 +130,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .calcular-items {
     background-color: rgba(0, 0, 0, 0.429);
     color: white;
-
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -303,7 +304,8 @@ h4#next-nick.welcome{
     padding-right: 65px;
     margin: 10px;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 25px;
+    font-weight: bolder;
     background-color: rgba(251, 28, 3, 0.578);
 }
 
