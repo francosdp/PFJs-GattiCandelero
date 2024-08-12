@@ -10,7 +10,7 @@ let foundWeapon
 let pistolas = []
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch("../data/weapons.json")
+    fetch("./data/weapons.json")
         .then(response => response.json())
         .then(data => {
             function buscarArma(wpnId) {
@@ -57,7 +57,7 @@ const pistolSelector = document.getElementById("pistol-selector")
 let shotguns = []
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch("../data/weapons.json")
+    fetch("./data/weapons.json")
         .then(response => response.json())
         .then(data => {
             function buscarArma(wpnId) {
@@ -103,7 +103,7 @@ const shotgunSelector = document.getElementById("shotgun-selector")
 let submachines = []
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch("../data/weapons.json")
+    fetch("./data/weapons.json")
         .then(response => response.json())
         .then(data => {
             function buscarArma(wpnId) {
@@ -150,7 +150,7 @@ const submachineSelector = document.getElementById("submachines-selector")
 let rifles = []
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch("../data/weapons.json")
+    fetch("./data/weapons.json")
         .then(response => response.json())
         .then(data => {
             function buscarArma(wpnId) {
@@ -195,7 +195,7 @@ const riflesSelector = document.getElementById("rifles-selector")
 
 let snipers = []
 document.addEventListener('DOMContentLoaded', () => {
-    fetch("../data/weapons.json")
+    fetch("./data/weapons.json")
         .then(response => response.json())
         .then(data => {
             function buscarArma(wpnId) {

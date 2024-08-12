@@ -6,7 +6,7 @@ let distances = []
 let foundRange
 const rangeSelector = document.getElementById('range-selector')
 document.addEventListener('DOMContentLoaded', () => {
-    fetch("../data/distances.json")
+    fetch("./data/distances.json")
         .then(response => response.json())
         .then(data => {
             function buscarRango(rangeId) {

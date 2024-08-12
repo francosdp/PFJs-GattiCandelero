@@ -6,7 +6,7 @@ let foundArmor
 let vests = []
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch("../data/vests.json")
+    fetch("./data/vests.json")
         .then(response => response.json())
         .then(data => {
             function buscarChaleco(vestId) {
