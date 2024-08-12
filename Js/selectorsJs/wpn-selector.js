@@ -42,6 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         img.src=pistola.img
                         img.alt=pistola.name
                         wpnInfo.appendChild(img)
+                        Toastify({
+                            text: "Has seleccionado " + pistola.name,
+                            duration: 3000
+                            }).showToast();
                     })
                 pistolSelector.appendChild(button);
             })
@@ -84,6 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         img.src=shotgun.img
                         img.alt=shotgun.name
                         wpnInfo.appendChild(img)
+                        Toastify({
+                            text: "Has seleccionado " + shotgun.name,
+                            duration: 3000
+                            }).showToast();
                     })
                     shotgunSelector.appendChild(button);
             })
@@ -126,6 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         img.src=submachine.img
                         img.alt=submachine.name
                         wpnInfo.appendChild(img)
+                        Toastify({
+                            text: "Has seleccionado " + submachine.name,
+                            duration: 3000
+                            }).showToast();
                     })
                     submachineSelector.appendChild(button);
             })
@@ -169,6 +181,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         img.src=rifle.img
                         img.alt=rifle.name
                         wpnInfo.appendChild(img)
+                        Toastify({
+                            text: "Has seleccionado " + rifle.name,
+                            duration: 3000
+                            }).showToast();
                     })
                     riflesSelector.appendChild(button);
             })
@@ -209,6 +225,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         img.src=sniper.img
                         img.alt=sniper.name
                         wpnInfo.appendChild(img)
+                        Toastify({
+                            text: "Has seleccionado " + sniper.name,
+                            duration: 3000
+                            }).showToast();
                     })
                     snipersSelector.appendChild(button);
             })

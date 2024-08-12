@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         vestShock.innerText = foundArmor.shockProtection
                         vestPen.innerText = foundArmor.penetrationProtection
                         vestDmg.innerText = foundArmor.damageProtection
+                        Toastify({
+                            text: "Chaleco " + vest.name,
+                            duration: 3000
+                            }).showToast();
                     })
                     vestSelector.appendChild(button);
             })

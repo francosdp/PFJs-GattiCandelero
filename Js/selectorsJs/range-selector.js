@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         rangeShock.innerText = foundRange.reducedShock
                         rangePen.innerText = foundRange.reducedPenetration
                         rangeDmg.innerText = foundRange.reducedDamage
+                        Toastify({
+                            text: "Distancia de " + range.name,
+                            duration: 3000
+                            }).showToast();
                     })
                     rangeSelector.appendChild(button);
             })
